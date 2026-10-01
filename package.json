@@ -1,0 +1,36 @@
+{
+  "name": "historical-costume-reference-studio",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "test": "node --experimental-strip-types --import ./scripts/register-ts.mjs --test src/lib/image-query.test.ts src/lib/serpapi.test.ts src/lib/search-service.test.ts src/lib/result-window.test.ts src/lib/library.test.ts src/lib/folders.test.ts src/lib/annotations.test.ts src/lib/uploads.test.ts src/lib/pose-views.test.ts src/lib/pose-joints.test.ts src/lib/pose-projection.test.ts src/lib/pose-presets.test.ts src/lib/pose-search-snapshot.test.ts src/lib/image-pose-analysis.test.ts src/lib/remote-image.test.ts src/lib/pose-similarity.test.ts src/lib/pose-result-rank.test.ts src/lib/pose-result-view.test.ts src/lib/search-session.test.ts src/lib/data-backup.test.ts src/lib/title-hints.test.ts src/lib/clip-lab.test.ts src/lib/clip-lab-cache.test.ts src/lib/person-lab.test.ts src/lib/person-hint.test.ts src/lib/search-favorites.test.ts src/lib/reference-download.test.ts src/lib/viewer-scroll-lock.test.ts",
+    "backup:data": "node --experimental-strip-types --import ./scripts/register-ts.mjs scripts/backup-data.ts",
+    "backup:verify": "node --experimental-strip-types --import ./scripts/register-ts.mjs scripts/backup-verify.ts",
+    "backup:restore": "node --experimental-strip-types --import ./scripts/register-ts.mjs scripts/backup-restore.ts"
+  },
+  "dependencies": {
+    "@huggingface/transformers": "^4.3.0",
+    "@mediapipe/tasks-vision": "^1.0.1",
+    "@react-three/drei": "^10.7.9",
+    "@react-three/fiber": "^9.8.1",
+    "next": "^15.5.4",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
+    "three": "^0.186.1"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3.3.1",
+    "@tailwindcss/postcss": "^4.1.13",
+    "@types/node": "^22.18.6",
+    "@types/react": "^19.1.13",
+    "@types/react-dom": "^19.1.9",
+    "eslint": "^9.36.0",
+    "eslint-config-next": "^15.5.4",
+    "tailwindcss": "^4.1.13",
+    "typescript": "^5.9.2"
+  }
+}
