@@ -1443,7 +1443,7 @@ function FilterRow({
       <FilterSelect
         label="성별"
         value={filters.gender}
-        options={["전체", ...GENDERS]}
+        options={["전체", ...GENDERS.filter((gender) => gender !== "구분 없음")]}
         onChange={(gender) => onChange({ ...filters, gender: gender as Filters["gender"] })}
       />
       <FilterSelect

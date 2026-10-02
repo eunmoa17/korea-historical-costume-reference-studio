@@ -8,7 +8,7 @@ export const ERAS = [
   "조선",
 ] as const;
 
-export const GENDERS = ["남성", "여성"] as const;
+export const GENDERS = ["남성", "여성","구분 없음"] as const;
 
 export const ROLES = [
   "왕·왕비",
